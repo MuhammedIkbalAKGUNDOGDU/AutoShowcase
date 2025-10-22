@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DemoModal from "@/components/DemoModal";
+import PerformanceModal from "@/components/PerformanceModal";
 import Hero from "@/components/Hero";
 import FeaturedVehicles from "@/components/FeaturedVehicles";
 import ServicesSection from "@/components/ServicesSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <Footer />
       <WhatsAppButton />
       <DemoModal />
+      <PerformanceModal />
     </div>
   );
 }

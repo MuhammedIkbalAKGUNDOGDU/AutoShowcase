@@ -126,6 +126,77 @@
       "rolls-royce-ghost": "Die Definition von Ultra-Luxus. Rolls-Royce Ghost ist einer der prestigeträchtigsten Limousinen der Welt mit handgefertigten Details und einzigartigem Komfort."
     }
   },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir sind hier, um Ihnen zu helfen, das perfekte Auto zu finden",
+    "hero": {
+      "description": "Kontaktieren Sie uns für Ihre Premium-Automobilerfahrung. Unser Expertenteam ist hier, um Ihnen den besten Service zu bieten."
+    },
+    "info": {
+      "phone": {
+        "title": "Telefon",
+        "detail1": "+90 212 555 0123",
+        "detail2": "+90 532 555 0123",
+        "description": "24/7 Kundenservice"
+      },
+      "email": {
+        "title": "E-Mail",
+        "detail1": "info@premiumauto.com",
+        "detail2": "verkauf@premiumauto.com",
+        "description": "Antwort innerhalb von 24 Stunden"
+      },
+      "address": {
+        "title": "Adresse",
+        "detail1": "Maslak Bezirk, Büyükdere Straße",
+        "detail2": "Nr: 123, Sarıyer/Istanbul",
+        "description": "Hauptshowroom"
+      },
+      "hours": {
+        "title": "Arbeitszeiten",
+        "detail1": "Montag - Freitag: 09:00 - 18:00",
+        "detail2": "Samstag: 09:00 - 16:00",
+        "description": "Sonntag geschlossen"
+      }
+    },
+    "form": {
+      "title": "Kontaktieren Sie uns",
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Ihr Vor- und Nachname",
+      "email": "E-Mail",
+      "emailPlaceholder": "beispiel@email.com",
+      "phone": "Telefon",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Nachrichtenbetreff",
+      "message": "Nachricht",
+      "messagePlaceholder": "Schreiben Sie hier Ihre Nachricht...",
+      "submit": "Nachricht senden"
+    },
+    "services": {
+      "title": "Unsere Dienstleistungen",
+      "vehicleSales": {
+        "title": "Fahrzeugverkauf",
+        "description": "Erhalten Sie Informationen über unsere Premium-Fahrzeuge"
+      },
+      "generalInfo": {
+        "title": "Allgemeine Informationen",
+        "description": "Kontaktieren Sie uns für alle Fragen"
+      },
+      "customerService": {
+        "title": "Kundenservice",
+        "description": "Support für unsere bestehenden Kunden"
+      }
+    },
+    "location": {
+      "title": "Unser Standort",
+      "placeholder": "Karte wird hier angezeigt"
+    },
+    "success": {
+      "title": "Nachricht gesendet!",
+      "message": "Ihre Nachricht wurde erfolgreich gesendet. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "close": "OK"
+    }
+  },
   "footer": {
     "copyright": "© 2024 Premium Auto. Alle Rechte vorbehalten.",
     "softiumTechnologies": "Erstellt von"

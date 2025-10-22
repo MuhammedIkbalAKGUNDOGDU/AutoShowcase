@@ -126,6 +126,77 @@
       "rolls-royce-ghost": "تعريف الفخامة الفائقة. رولز رويس Ghost هي واحدة من أكثر السيدان هيبة في العالم بتفاصيل مصنوعة يدوياً وراحة فريدة."
     }
   },
+  "contact": {
+    "title": "اتصل بنا",
+    "subtitle": "نحن هنا لمساعدتك في العثور على السيارة المثالية",
+    "hero": {
+      "description": "تواصل معنا لتجربة السيارات الفاخرة. فريقنا المتخصص هنا لتقديم أفضل خدمة لك."
+    },
+    "info": {
+      "phone": {
+        "title": "الهاتف",
+        "detail1": "+90 212 555 0123",
+        "detail2": "+90 532 555 0123",
+        "description": "خدمة عملاء على مدار الساعة"
+      },
+      "email": {
+        "title": "البريد الإلكتروني",
+        "detail1": "info@premiumauto.com",
+        "detail2": "sales@premiumauto.com",
+        "description": "رد خلال 24 ساعة"
+      },
+      "address": {
+        "title": "العنوان",
+        "detail1": "حي مسلك، شارع بيوكديري",
+        "detail2": "رقم: 123، ساريير/إسطنبول",
+        "description": "المعرض الرئيسي"
+      },
+      "hours": {
+        "title": "ساعات العمل",
+        "detail1": "الاثنين - الجمعة: 09:00 - 18:00",
+        "detail2": "السبت: 09:00 - 16:00",
+        "description": "الأحد مغلق"
+      }
+    },
+    "form": {
+      "title": "تواصل معنا",
+      "name": "الاسم الكامل",
+      "namePlaceholder": "الاسم الأول والأخير",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "example@email.com",
+      "phone": "الهاتف",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "subject": "الموضوع",
+      "subjectPlaceholder": "موضوع الرسالة",
+      "message": "الرسالة",
+      "messagePlaceholder": "اكتب رسالتك هنا...",
+      "submit": "إرسال الرسالة"
+    },
+    "services": {
+      "title": "خدماتنا",
+      "vehicleSales": {
+        "title": "بيع المركبات",
+        "description": "احصل على معلومات حول سياراتنا الفاخرة"
+      },
+      "generalInfo": {
+        "title": "معلومات عامة",
+        "description": "تواصل معنا لأي استفسارات"
+      },
+      "customerService": {
+        "title": "خدمة العملاء",
+        "description": "دعم لعملائنا الحاليين"
+      }
+    },
+    "location": {
+      "title": "موقعنا",
+      "placeholder": "ستظهر الخريطة هنا"
+    },
+    "success": {
+      "title": "تم إرسال الرسالة!",
+      "message": "تم إرسال رسالتك بنجاح. سنتواصل معك في أقرب وقت ممكن.",
+      "close": "موافق"
+    }
+  },
   "footer": {
     "copyright": "© 2024 Premium Auto. جميع الحقوق محفوظة.",
     "softiumTechnologies": "أعدت بواسطة"

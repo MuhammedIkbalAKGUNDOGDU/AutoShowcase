@@ -125,48 +125,57 @@ export default function Contact() {
   const contactInfo = [
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Telefon",
-      details: ["+90 212 555 0123", "+90 532 555 0123"],
-      description: "7/24 müşteri hizmetleri",
+      title: t("contact.info.phone.title"),
+      details: [
+        t("contact.info.phone.detail1"),
+        t("contact.info.phone.detail2"),
+      ],
+      description: t("contact.info.phone.description"),
     },
     {
       icon: <Mail className="w-6 h-6" />,
-      title: "E-posta",
-      details: ["info@premiumauto.com", "satis@premiumauto.com"],
-      description: "24 saat içinde yanıt",
+      title: t("contact.info.email.title"),
+      details: [
+        t("contact.info.email.detail1"),
+        t("contact.info.email.detail2"),
+      ],
+      description: t("contact.info.email.description"),
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: "Adres",
+      title: t("contact.info.address.title"),
       details: [
-        "Maslak Mahallesi, Büyükdere Caddesi",
-        "No: 123, Sarıyer/İstanbul",
+        t("contact.info.address.detail1"),
+        t("contact.info.address.detail2"),
       ],
-      description: "Ana Showroom",
+      description: t("contact.info.address.description"),
     },
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "Çalışma Saatleri",
-      details: ["Pazartesi - Cuma: 09:00 - 18:00", "Cumartesi: 09:00 - 16:00"],
-      description: "Pazar kapalı",
+      title: t("contact.info.hours.title"),
+      details: [
+        t("contact.info.hours.detail1"),
+        t("contact.info.hours.detail2"),
+      ],
+      description: t("contact.info.hours.description"),
     },
   ];
 
   const services = [
     {
       icon: <Car className="w-8 h-8" />,
-      title: "Araç Satışı",
-      description: "Premium araçlarımız hakkında bilgi alın",
+      title: t("contact.services.vehicleSales.title"),
+      description: t("contact.services.vehicleSales.description"),
     },
     {
       icon: <MessageCircle className="w-8 h-8" />,
-      title: "Genel Bilgi",
-      description: "Her türlü sorunuz için bizimle iletişime geçin",
+      title: t("contact.services.generalInfo.title"),
+      description: t("contact.services.generalInfo.description"),
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Müşteri Hizmetleri",
-      description: "Mevcut müşterilerimiz için destek",
+      title: t("contact.services.customerService.title"),
+      description: t("contact.services.customerService.description"),
     },
   ];
 
@@ -212,8 +221,7 @@ export default function Contact() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                Premium otomobil deneyiminiz için bizimle iletişime geçin. Uzman
-                ekibimiz size en iyi hizmeti sunmak için burada.
+                {t("contact.hero.description")}
               </motion.p>
             </motion.div>
           </div>
@@ -290,7 +298,9 @@ export default function Contact() {
                       <div className="p-2 bg-primary/10 rounded-lg">
                         <Send className="w-6 h-6 text-primary" />
                       </div>
-                      <h2 className="text-2xl font-bold">Bize Ulaşın</h2>
+                      <h2 className="text-2xl font-bold">
+                        {t("contact.form.title")}
+                      </h2>
                     </motion.div>
 
                     <motion.form
@@ -308,7 +318,7 @@ export default function Contact() {
                             htmlFor="name"
                             className="block text-sm font-medium mb-2"
                           >
-                            Ad Soyad *
+                            {t("contact.form.name")} *
                           </label>
                           <Input
                             id="name"
@@ -317,7 +327,7 @@ export default function Contact() {
                             required
                             value={formData.name}
                             onChange={handleInputChange}
-                            placeholder="Adınız ve soyadınız"
+                            placeholder={t("contact.form.namePlaceholder")}
                           />
                         </div>
                         <div>
@@ -325,7 +335,7 @@ export default function Contact() {
                             htmlFor="email"
                             className="block text-sm font-medium mb-2"
                           >
-                            E-posta *
+                            {t("contact.form.email")} *
                           </label>
                           <Input
                             id="email"
@@ -334,7 +344,7 @@ export default function Contact() {
                             required
                             value={formData.email}
                             onChange={handleInputChange}
-                            placeholder="ornek@email.com"
+                            placeholder={t("contact.form.emailPlaceholder")}
                           />
                         </div>
                       </div>
@@ -345,7 +355,7 @@ export default function Contact() {
                             htmlFor="phone"
                             className="block text-sm font-medium mb-2"
                           >
-                            Telefon
+                            {t("contact.form.phone")}
                           </label>
                           <Input
                             id="phone"
@@ -353,7 +363,7 @@ export default function Contact() {
                             type="tel"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            placeholder="+90 5XX XXX XX XX"
+                            placeholder={t("contact.form.phonePlaceholder")}
                           />
                         </div>
                         <div>
@@ -361,7 +371,7 @@ export default function Contact() {
                             htmlFor="subject"
                             className="block text-sm font-medium mb-2"
                           >
-                            Konu *
+                            {t("contact.form.subject")} *
                           </label>
                           <Input
                             id="subject"
@@ -370,7 +380,7 @@ export default function Contact() {
                             required
                             value={formData.subject}
                             onChange={handleInputChange}
-                            placeholder="Mesaj konusu"
+                            placeholder={t("contact.form.subjectPlaceholder")}
                           />
                         </div>
                       </div>
@@ -380,7 +390,7 @@ export default function Contact() {
                           htmlFor="message"
                           className="block text-sm font-medium mb-2"
                         >
-                          Mesaj *
+                          {t("contact.form.message")} *
                         </label>
                         <Textarea
                           id="message"
@@ -389,13 +399,13 @@ export default function Contact() {
                           rows={5}
                           value={formData.message}
                           onChange={handleInputChange}
-                          placeholder="Mesajınızı buraya yazın..."
+                          placeholder={t("contact.form.messagePlaceholder")}
                         />
                       </div>
 
                       <Button type="submit" className="w-full" size="lg">
                         <Send className="w-4 h-4 mr-2" />
-                        Mesaj Gönder
+                        {t("contact.form.submit")}
                       </Button>
                     </motion.form>
                   </CardContent>
@@ -410,7 +420,9 @@ export default function Contact() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  <h2 className="text-2xl font-bold mb-6">Hizmetlerimiz</h2>
+                  <h2 className="text-2xl font-bold mb-6">
+                    {t("contact.services.title")}
+                  </h2>
                   <div className="space-y-4">
                     {services.map((service, index) => (
                       <motion.div
@@ -451,12 +463,14 @@ export default function Contact() {
                 >
                   <Card>
                     <CardContent className="p-6">
-                      <h3 className="text-lg font-semibold mb-4">Konumumuz</h3>
+                      <h3 className="text-lg font-semibold mb-4">
+                        {t("contact.location.title")}
+                      </h3>
                       <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                         <div className="text-center">
                           <MapPin className="w-12 h-12 text-muted-foreground mx-auto mb-2" />
                           <p className="text-muted-foreground">
-                            Harita burada görünecek
+                            {t("contact.location.placeholder")}
                           </p>
                         </div>
                       </div>

@@ -55,32 +55,31 @@ export default function About() {
   const values = [
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "Güvenilirlik",
-      description:
-        "Müşterilerimize en güvenilir hizmeti sunmak için sürekli çalışıyoruz.",
+      title: t("about.values.reliability.title"),
+      description: t("about.values.reliability.description"),
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: "Kalite",
-      description: "Sadece en kaliteli araçları müşterilerimize sunuyoruz.",
+      title: t("about.values.quality.title"),
+      description: t("about.values.quality.description"),
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Müşteri Memnuniyeti",
-      description: "Müşteri memnuniyeti bizim önceliğimizdir.",
+      title: t("about.values.customerSatisfaction.title"),
+      description: t("about.values.customerSatisfaction.description"),
     },
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Hedef Odaklılık",
-      description: "Her projede mükemmellik hedefliyoruz.",
+      title: t("about.values.goalOriented.title"),
+      description: t("about.values.goalOriented.description"),
     },
   ];
 
   const stats = [
-    { number: "500+", label: "Mutlu Müşteri" },
-    { number: "1000+", label: "Satılan Araç" },
-    { number: "15+", label: "Yıllık Deneyim" },
-    { number: "50+", label: "Marka" },
+    { number: "500+", label: t("about.stats.happyCustomers") },
+    { number: "1000+", label: t("about.stats.soldCars") },
+    { number: "15+", label: t("about.stats.yearsExperience") },
+    { number: "50+", label: t("about.stats.brands") },
   ];
 
   return (
@@ -125,9 +124,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                Premium otomobil dünyasında 15 yılı aşkın deneyimimizle, en
-                kaliteli araçları müşterilerimize sunuyoruz. Güvenilirlik,
-                kalite ve müşteri memnuniyeti bizim önceliğimizdir.
+                {t("about.hero.description")}
               </motion.p>
             </motion.div>
 
@@ -186,7 +183,9 @@ export default function About() {
                       <div className="p-3 bg-primary/10 rounded-lg">
                         <Target className="w-8 h-8 text-primary" />
                       </div>
-                      <h2 className="text-2xl font-bold">Misyonumuz</h2>
+                      <h2 className="text-2xl font-bold">
+                        {t("about.mission.title")}
+                      </h2>
                     </motion.div>
                     <motion.p
                       className="text-muted-foreground leading-relaxed"
@@ -195,10 +194,7 @@ export default function About() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: 0.3 }}
                     >
-                      Premium otomobil sektöründe müşterilerimize en kaliteli
-                      araçları sunarak, onların hayallerini gerçeğe dönüştürmek.
-                      Güvenilir, şeffaf ve müşteri odaklı hizmet anlayışımızla
-                      sektörde öncü olmaya devam ediyoruz.
+                      {t("about.mission.description")}
                     </motion.p>
                   </CardContent>
                 </Card>
@@ -217,7 +213,9 @@ export default function About() {
                       <div className="p-3 bg-primary/10 rounded-lg">
                         <Globe className="w-8 h-8 text-primary" />
                       </div>
-                      <h2 className="text-2xl font-bold">Vizyonumuz</h2>
+                      <h2 className="text-2xl font-bold">
+                        {t("about.vision.title")}
+                      </h2>
                     </motion.div>
                     <motion.p
                       className="text-muted-foreground leading-relaxed"
@@ -226,10 +224,7 @@ export default function About() {
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: 0.3 }}
                     >
-                      Türkiye'nin en güvenilir premium otomobil platformu olmak.
-                      Teknolojik yeniliklerle müşteri deneyimini sürekli
-                      geliştirerek, sektörde standartları belirleyen bir marka
-                      haline gelmek.
+                      {t("about.vision.description")}
                     </motion.p>
                   </CardContent>
                 </Card>
@@ -249,10 +244,10 @@ export default function About() {
               variants={fadeInUp}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Değerlerimiz
+                {t("about.values.title")}
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                İş yapış şeklimizi belirleyen temel değerlerimiz
+                {t("about.values.subtitle")}
               </p>
             </motion.div>
 
@@ -300,9 +295,11 @@ export default function About() {
               viewport={{ once: true, amount: 0.3 }}
               variants={fadeInUp}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ekibimiz</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t("about.team.title")}
+              </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Alanında uzman, deneyimli ve müşteri odaklı ekibimiz
+                {t("about.team.subtitle")}
               </p>
             </motion.div>
 
@@ -325,10 +322,11 @@ export default function About() {
                     >
                       <Users className="w-10 h-10 text-primary" />
                     </motion.div>
-                    <h3 className="text-xl font-semibold mb-2">Satış Ekibi</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {t("about.team.sales.title")}
+                    </h3>
                     <p className="text-muted-foreground text-sm">
-                      Premium araçlar konusunda uzman satış danışmanlarımız,
-                      size en uygun seçenekleri sunmak için burada.
+                      {t("about.team.sales.description")}
                     </p>
                   </CardContent>
                 </Card>
@@ -346,10 +344,11 @@ export default function About() {
                     >
                       <Award className="w-10 h-10 text-primary" />
                     </motion.div>
-                    <h3 className="text-xl font-semibold mb-2">Teknik Ekip</h3>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {t("about.team.technical.title")}
+                    </h3>
                     <p className="text-muted-foreground text-sm">
-                      Sertifikalı teknisyenlerimiz, araçlarınızın bakım ve
-                      onarımında en yüksek kaliteyi garanti eder.
+                      {t("about.team.technical.description")}
                     </p>
                   </CardContent>
                 </Card>
@@ -368,11 +367,10 @@ export default function About() {
                       <Car className="w-10 h-10 text-primary" />
                     </motion.div>
                     <h3 className="text-xl font-semibold mb-2">
-                      Müşteri Hizmetleri
+                      {t("about.team.customerService.title")}
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      7/24 müşteri hizmetlerimiz, her türlü sorunuzda yanınızda
-                      olmaya devam ediyor.
+                      {t("about.team.customerService.description")}
                     </p>
                   </CardContent>
                 </Card>

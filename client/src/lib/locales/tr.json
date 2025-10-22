@@ -39,23 +39,125 @@
     "allMakes": "Tüm Markalar",
     "allYears": "Tüm Yıllar"
   },
+  "about": {
+    "hero": {
+      "description": "Premium otomobil dünyasında 15 yılı aşkın deneyimimizle, en kaliteli araçları müşterilerimize sunuyoruz. Güvenilirlik, kalite ve müşteri memnuniyeti bizim önceliğimizdir."
+    },
+    "stats": {
+      "happyCustomers": "Mutlu Müşteri",
+      "soldCars": "Satılan Araç",
+      "yearsExperience": "Yıllık Deneyim",
+      "brands": "Marka"
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Premium otomobil sektöründe müşterilerimize en kaliteli araçları sunarak, onların hayallerini gerçeğe dönüştürmek. Güvenilir, şeffaf ve müşteri odaklı hizmet anlayışımızla sektörde öncü olmaya devam ediyoruz."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "description": "Türkiye'nin en güvenilir premium otomobil platformu olmak. Teknolojik yeniliklerle müşteri deneyimini sürekli geliştirerek, sektörde standartları belirleyen bir marka haline gelmek."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "subtitle": "İş yapış şeklimizi belirleyen temel değerlerimiz",
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Müşterilerimize en güvenilir hizmeti sunmak için sürekli çalışıyoruz."
+      },
+      "quality": {
+        "title": "Kalite",
+        "description": "Sadece en kaliteli araçları müşterilerimize sunuyoruz."
+      },
+      "customerSatisfaction": {
+        "title": "Müşteri Memnuniyeti",
+        "description": "Müşteri memnuniyeti bizim önceliğimizdir."
+      },
+      "goalOriented": {
+        "title": "Hedef Odaklılık",
+        "description": "Her projede mükemmellik hedefliyoruz."
+      }
+    },
+    "team": {
+      "title": "Ekibimiz",
+      "subtitle": "Alanında uzman, deneyimli ve müşteri odaklı ekibimiz",
+      "sales": {
+        "title": "Satış Ekibi",
+        "description": "Premium araçlar konusunda uzman satış danışmanlarımız, size en uygun seçenekleri sunmak için burada."
+      },
+      "technical": {
+        "title": "Teknik Ekip",
+        "description": "Sertifikalı teknisyenlerimiz, araçlarınızın bakım ve onarımında en yüksek kaliteyi garanti eder."
+      },
+      "customerService": {
+        "title": "Müşteri Hizmetleri",
+        "description": "7/24 müşteri hizmetlerimiz, her türlü sorunuzda yanınızda olmaya devam ediyor."
+      }
+    }
+  },
   "contact": {
     "title": "İletişim",
     "subtitle": "Mükemmel aracınızı bulmanızda size yardımcı olmak için buradayız",
-    "address": "Adres",
-    "addressText": "Lüks Caddesi, İş Merkezi, İstanbul",
-    "phone": "Telefon",
-    "phoneText": "+90 532 555 01 23",
-    "email": "E-posta",
-    "emailText": "info@premiumauto.com",
-    "hours": "Çalışma Saatleri",
-    "hoursText": "Pazartesi - Cuma: 9:00 - 18:00",
+    "hero": {
+      "description": "Premium otomobil deneyiminiz için bizimle iletişime geçin. Uzman ekibimiz size en iyi hizmeti sunmak için burada."
+    },
+    "info": {
+      "phone": {
+        "title": "Telefon",
+        "detail1": "+90 212 555 0123",
+        "detail2": "+90 532 555 0123",
+        "description": "7/24 müşteri hizmetleri"
+      },
+      "email": {
+        "title": "E-posta",
+        "detail1": "info@premiumauto.com",
+        "detail2": "satis@premiumauto.com",
+        "description": "24 saat içinde yanıt"
+      },
+      "address": {
+        "title": "Adres",
+        "detail1": "Maslak Mahallesi, Büyükdere Caddesi",
+        "detail2": "No: 123, Sarıyer/İstanbul",
+        "description": "Ana Showroom"
+      },
+      "hours": {
+        "title": "Çalışma Saatleri",
+        "detail1": "Pazartesi - Cuma: 09:00 - 18:00",
+        "detail2": "Cumartesi: 09:00 - 16:00",
+        "description": "Pazar kapalı"
+      }
+    },
     "form": {
+      "title": "Bize Ulaşın",
       "name": "Ad Soyad",
+      "namePlaceholder": "Adınız ve soyadınız",
       "email": "E-posta",
+      "emailPlaceholder": "ornek@email.com",
       "phone": "Telefon",
+      "phonePlaceholder": "+90 5XX XXX XX XX",
+      "subject": "Konu",
+      "subjectPlaceholder": "Mesaj konusu",
       "message": "Mesaj",
+      "messagePlaceholder": "Mesajınızı buraya yazın...",
       "submit": "Mesaj Gönder"
+    },
+    "services": {
+      "title": "Hizmetlerimiz",
+      "vehicleSales": {
+        "title": "Araç Satışı",
+        "description": "Premium araçlarımız hakkında bilgi alın"
+      },
+      "generalInfo": {
+        "title": "Genel Bilgi",
+        "description": "Her türlü sorunuz için bizimle iletişime geçin"
+      },
+      "customerService": {
+        "title": "Müşteri Hizmetleri",
+        "description": "Mevcut müşterilerimiz için destek"
+      }
+    },
+    "location": {
+      "title": "Konumumuz",
+      "placeholder": "Harita burada görünecek"
     },
     "success": {
       "title": "Mesajınız Gönderildi!",
