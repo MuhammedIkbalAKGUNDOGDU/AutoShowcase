@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Menu, X } from "lucide-react";
@@ -77,43 +78,69 @@ export default function Navbar() {
         </div>
       </div>
 
-      {mobileMenuOpen && (
-        <div
-          className="md:hidden border-t border-border/40 bg-background/95 backdrop-blur-lg"
-          data-testid="mobile-menu"
-        >
-          <div className="px-4 py-4 space-y-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                href={link.path}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium transition-colors hover-elevate active-elevate-2 ${
-                  location === link.path ? "text-primary" : "text-foreground"
-                }`}
-                data-testid={`link-mobile-${link.label.toLowerCase()}`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <div className="pt-3 space-y-3 border-t border-border/40">
-              <LanguageSwitcher />
-              <Link href="/contact">
-                <Button
-                  variant="default"
-                  className="w-full"
-                  data-testid="button-contact-mobile"
-                  onClick={() =>
-                    sessionStorage.setItem("scrollToContact", "true")
-                  }
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden border-t border-border/40 bg-background/95 backdrop-blur-lg overflow-hidden"
+            data-testid="mobile-menu"
+          >
+            <motion.div
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              className="px-4 py-4 space-y-3"
+            >
+              {navLinks.map((link, index) => (
+                <motion.div
+                  key={link.path}
+                  initial={{ x: -20, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.2, delay: 0.1 + index * 0.05 }}
                 >
-                  {t("nav.contactUs")}
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
+                  <Link
+                    href={link.path}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors hover-elevate active-elevate-2 ${
+                      location === link.path
+                        ? "text-primary"
+                        : "text-foreground"
+                    }`}
+                    data-testid={`link-mobile-${link.label.toLowerCase()}`}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
+                className="pt-3 space-y-3 border-t border-border/40"
+              >
+                <LanguageSwitcher />
+                <Link href="/contact">
+                  <Button
+                    variant="default"
+                    className="w-full"
+                    data-testid="button-contact-mobile"
+                    onClick={() => {
+                      sessionStorage.setItem("scrollToContact", "true");
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    {t("nav.contactUs")}
+                  </Button>
+                </Link>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
