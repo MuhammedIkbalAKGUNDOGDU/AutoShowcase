@@ -595,12 +595,16 @@ export default function CarDetail() {
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="flex-1">
-                  {t("carDetail.contactUs")}
-                </Button>
-                <Button variant="outline" size="lg" className="flex-1">
-                  {t("carDetail.testDrive")}
-                </Button>
+                <Link href="/contact">
+                  <Button size="lg" className="flex-1 w-full">
+                    {t("carDetail.contactUs")}
+                  </Button>
+                </Link>
+                <Link href="/contact">
+                  <Button variant="outline" size="lg" className="flex-1 w-full">
+                    {t("carDetail.testDrive")}
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

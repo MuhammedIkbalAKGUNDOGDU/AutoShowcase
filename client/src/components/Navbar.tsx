@@ -49,9 +49,17 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center gap-3">
             <LanguageSwitcher />
-            <Button variant="default" data-testid="button-contact-desktop">
-              {t("nav.contactUs")}
-            </Button>
+            <Link href="/contact">
+              <Button
+                variant="default"
+                data-testid="button-contact-desktop"
+                onClick={() =>
+                  sessionStorage.setItem("scrollToContact", "true")
+                }
+              >
+                {t("nav.contactUs")}
+              </Button>
+            </Link>
           </div>
 
           <button
@@ -90,13 +98,18 @@ export default function Navbar() {
             ))}
             <div className="pt-3 space-y-3 border-t border-border/40">
               <LanguageSwitcher />
-              <Button
-                variant="default"
-                className="w-full"
-                data-testid="button-contact-mobile"
-              >
-                {t("nav.contactUs")}
-              </Button>
+              <Link href="/contact">
+                <Button
+                  variant="default"
+                  className="w-full"
+                  data-testid="button-contact-mobile"
+                  onClick={() =>
+                    sessionStorage.setItem("scrollToContact", "true")
+                  }
+                >
+                  {t("nav.contactUs")}
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

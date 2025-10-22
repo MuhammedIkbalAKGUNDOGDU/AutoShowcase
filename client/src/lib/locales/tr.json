@@ -39,6 +39,30 @@
     "allMakes": "Tüm Markalar",
     "allYears": "Tüm Yıllar"
   },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Mükemmel aracınızı bulmanızda size yardımcı olmak için buradayız",
+    "address": "Adres",
+    "addressText": "Lüks Caddesi, İş Merkezi, İstanbul",
+    "phone": "Telefon",
+    "phoneText": "+90 532 555 01 23",
+    "email": "E-posta",
+    "emailText": "info@premiumauto.com",
+    "hours": "Çalışma Saatleri",
+    "hoursText": "Pazartesi - Cuma: 9:00 - 18:00",
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "message": "Mesaj",
+      "submit": "Mesaj Gönder"
+    },
+    "success": {
+      "title": "Mesajınız Gönderildi!",
+      "message": "Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.",
+      "close": "Tamam"
+    }
+  },
   "footer": {
     "copyright": "Telif Hakkı © 2025 Premium Auto. Tüm hakları saklıdır."
   },

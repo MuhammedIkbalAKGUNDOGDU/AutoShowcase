@@ -2,44 +2,133 @@
   "nav": {
     "home": "Startseite",
     "vehicles": "Fahrzeuge",
+    "blog": "Blog",
     "about": "Über uns",
     "contact": "Kontakt",
     "contactUs": "Kontaktieren Sie uns"
   },
   "hero": {
-    "title": "Ihr Traumauto wartet auf Sie",
-    "subtitle": "Wo Luxus auf Leistung trifft",
-    "cta": "Entdecken Sie unsere Fahrzeuge"
+    "title": "Entdecken Sie die Welt der Luxusautos",
+    "subtitle": "Die beste Sammlung von Luxusautos der Welt",
+    "cta": "Fahrzeuge durchsuchen"
   },
   "featured": {
-    "title": "Ausgewählte Fahrzeuge",
+    "title": "Empfohlene Fahrzeuge",
     "viewDetails": "Details anzeigen"
   },
   "services": {
     "title": "Unsere Dienstleistungen",
-    "inspection": {
-      "title": "Vollständige Inspektion",
-      "description": "Jedes Fahrzeug durchläuft eine umfassende 150-Punkte-Inspektion für Premium-Qualität und Sicherheit."
+    "consultation": {
+      "title": "Kostenlose Beratung",
+      "description": "Expertenberatung für die Auswahl des richtigen Fahrzeugs"
     },
     "financing": {
-      "title": "Finanzierungsoptionen",
-      "description": "Flexible Finanzierungslösungen auf Ihre Bedürfnisse zugeschnitten mit wettbewerbsfähigen Konditionen."
+      "title": "Günstige Finanzierung",
+      "description": "Flexible Finanzierungslösungen für jedes Budget"
     },
-    "warranty": {
-      "title": "Premium-Garantie",
-      "description": "Erweiterte Garantieabdeckung für Sicherheit und Schutz Ihrer Luxusinvestition."
+    "maintenance": {
+      "title": "Umfassende Wartung",
+      "description": "Professionelle Wartung für alle Fahrzeuge"
     }
   },
   "inventory": {
-    "title": "Unser vollständiges Inventar",
-    "searchPlaceholder": "Nach Marke oder Modell suchen...",
-    "filterMake": "Nach Marke filtern",
-    "filterYear": "Nach Jahr filtern",
-    "allMakes": "Alle Marken",
-    "allYears": "Alle Jahre"
+    "title": "Fahrzeugbestand",
+    "searchPlaceholder": "Fahrzeug suchen...",
+    "makePlaceholder": "Marke wählen",
+    "yearPlaceholder": "Jahr wählen",
+    "noResults": "Keine Fahrzeuge gefunden"
+  },
+  "about": {
+    "title": "Über uns",
+    "subtitle": "Die Geschichte unseres Erfolgs in der Welt der Luxusautos",
+    "mission": "Unsere Mission",
+    "missionText": "Das beste Erlebnis in der Welt der Luxusautos mit außergewöhnlichem Kundenservice bieten",
+    "vision": "Unsere Vision",
+    "visionText": "Die erste Wahl für Luxusauto-Enthusiasten in der Region sein",
+    "values": "Unsere Werte",
+    "quality": "Qualität",
+    "qualityText": "Wir halten uns an höchste Qualitätsstandards in allem, was wir tun",
+    "trust": "Vertrauen",
+    "trustText": "Langfristige Beziehungen zu unseren Kunden aufbauen",
+    "innovation": "Innovation",
+    "innovationText": "Neueste Technologien nutzen, um das Kundenerlebnis zu verbessern"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Wir sind hier, um Ihnen zu helfen, das perfekte Auto zu finden",
+    "address": "Adresse",
+    "addressText": "Luxusstraße, Geschäftsviertel, Istanbul",
+    "phone": "Telefon",
+    "phoneText": "+90 532 555 01 23",
+    "email": "E-Mail",
+    "emailText": "info@premiumauto.com",
+    "hours": "Öffnungszeiten",
+    "hoursText": "Montag - Freitag: 9:00 - 18:00",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "message": "Nachricht",
+      "submit": "Nachricht senden"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Neueste Nachrichten, Anleitungen und Expertenmeinungen aus der Welt der Luxusautos.",
+    "readMore": "Weiterlesen",
+    "backToBlog": "Zurück zum Blog",
+    "share": "Teilen",
+    "like": "Gefällt mir",
+    "tags": "Tags",
+    "notFound": "Blog-Beitrag nicht gefunden",
+    "notFoundMessage": "Der Blog-Beitrag, den Sie suchen, existiert nicht.",
+    "posts": {
+      "premium-arac-bakimi-2024": {
+        "title": "Die Bedeutung der Luxusauto-Wartung im Jahr 2024",
+        "excerpt": "Detaillierte Informationen über die kritische Bedeutung regelmäßiger Wartung zur Erhaltung der Leistung und des Wertes Ihrer Luxusfahrzeuge.",
+        "category": "Wartung",
+        "tags": ["Wartung", "Luxus", "Leistung"],
+        "content": "<p>Luxusautos sind nicht nur ein Transportmittel, sondern auch ein Spiegelbild eines Lebensstils. Regelmäßige Wartung ist entscheidend für die Erhaltung der Leistung und des Wertes dieser wertvollen Fahrzeuge.</p><h2>Warum ist Luxusauto-Wartung wichtig?</h2><p>Luxusautos werden mit fortschrittlicher Technologie und hochwertigen Materialien hergestellt. Die Wartung dieser Fahrzeuge unterscheidet sich von Standardfahrzeugen und erfordert besondere Aufmerksamkeit.</p><h3>Vorteile regelmäßiger Wartung:</h3><ul><li><strong>Leistungserhaltung:</strong> Optimale Funktion von Motor und anderen kritischen Komponenten</li><li><strong>Sicherheit:</strong> Ordnungsgemäße Funktion aller Sicherheitssysteme</li><li><strong>Wertschutz:</strong> Erhaltung des Marktwerts des Fahrzeugs</li><li><strong>Langlebigkeit:</strong> Verlängerung der Lebensdauer des Fahrzeugs</li></ul><h2>Was 2024 zu beachten ist</h2><p>In diesem Jahr sind aufgrund der Entwicklungen in der Automobiltechnologie neue Trends in der Luxusauto-Wartung entstanden:</p><h3>Elektronische Systemwartung</h3><p>Moderne Luxusautos sind mit fortschrittlichen elektronischen Systemen ausgestattet. Regelmäßige Überprüfung und Aktualisierung dieser Systeme ist wichtig.</p><h3>Hybrid- und Elektrosysteme</h3><p>Für Hybrid- und Elektromodelle von Luxusmarken wurden spezielle Wartungsprotokolle entwickelt. Für die Wartung dieser Fahrzeuge sind zertifizierte Techniker erforderlich.</p><h2>Wartungsprogramm-Empfehlungen</h2><p>Empfohlenes Wartungsprogramm für Ihre Luxusfahrzeuge:</p><ul><li>Allgemeine Inspektion alle 10.000 km</li><li>Detaillierte Wartung alle 20.000 km</li><li>Umfassender Service einmal jährlich</li><li>Elektronische System-Updates</li></ul><p>Luxusauto-Wartung ist nicht nur für Fahrzeugbesitzer wichtig, sondern auch für zukünftige Generationen. Gut gewartete Fahrzeuge verursachen weniger Umweltschäden und tragen zu einer nachhaltigen Zukunft bei.</p>"
+      }
+    }
+  },
+  "carDetail": {
+    "notFound": "Fahrzeug nicht gefunden",
+    "backToVehicles": "Zurück zu Fahrzeugen",
+    "contactUs": "Kontaktieren Sie uns",
+    "testDrive": "Probefahrt",
+    "features": "Ausstattung",
+    "specifications": "Technische Daten",
+    "colors": "Farboptionen",
+    "gallery": "Galerie",
+    "engine": "Motor",
+    "power": "Leistung",
+    "torque": "Drehmoment",
+    "acceleration": "Beschleunigung",
+    "topSpeed": "Höchstgeschwindigkeit",
+    "fuelConsumption": "Kraftstoffverbrauch",
+    "transmission": "Getriebe",
+    "driveType": "Antriebsart",
+    "seats": "Sitze",
+    "doors": "Türen",
+    "descriptions": {
+      "mercedes-s-class": "Die perfekte Kombination aus Luxus und Komfort. Mercedes-Benz S-Class bietet überlegene Technologie und Eleganz.",
+      "porsche-911-carrera": "Die reinste Form der legendären 911. Porsche 911 Carrera bietet den Gipfel des Sportwagen-Erlebnisses.",
+      "bmw-m5-competition": "Das perfekte Gleichgewicht zwischen Leistung und Luxus. BMW M5 Competition sticht mit seinem kraftvollen Motor und fortschrittlichen Technologien hervor.",
+      "audi-q8-premium": "Der Pionier der Luxus-SUV-Segmente. Audi Q8 Premium sticht mit seinem geräumigen Innenraum und fortschrittlichen Technologien hervor.",
+      "tesla-model-s-plaid": "Der Gipfel der elektrischen Leistung. Tesla Model S Plaid bietet einzigartige Geschwindigkeit und Technologie mit null Emissionen.",
+      "range-rover-sport-hse": "Die Kombination aus Geländefähigkeiten und luxuriösem Komfort. Range Rover Sport HSE liefert überlegene Leistung in allen Bedingungen.",
+      "jaguar-f-type-r": "Das Zusammentreffen britischer Eleganz und kraftvoller Leistung. Jaguar F-Type R ist für Sportwagen-Enthusiasten konzipiert.",
+      "maserati-quattroporte": "Das Symbol italienischen Luxus und der Leistung. Maserati Quattroporte verbindet Eleganz und Kraft perfekt.",
+      "bentley-continental-gt": "Ultra-luxuriöser Grand Tourer. Bentley Continental GT bietet ein einzigartiges Erlebnis mit handgefertigten Details und kraftvoller Leistung.",
+      "lexus-ls-500": "Der Gipfel des japanischen Luxus. Lexus LS 500 bietet Stille und Komfort auf höchstem Niveau.",
+      "aston-martin-db11": "Die moderne Interpretation der britischen Sportwagen-Tradition. Aston Martin DB11 verbindet Eleganz und Leistung.",
+      "rolls-royce-ghost": "Die Definition von Ultra-Luxus. Rolls-Royce Ghost ist einer der prestigeträchtigsten Limousinen der Welt mit handgefertigten Details und einzigartigem Komfort."
+    }
   },
   "footer": {
-    "copyright": "Copyright © 2025 Premium Auto. Alle Rechte vorbehalten."
+    "copyright": "© 2024 Premium Auto. Alle Rechte vorbehalten.",
+    "softiumTechnologies": "Erstellt von"
   },
   "language": {
     "select": "Sprache"

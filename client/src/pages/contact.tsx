@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -10,6 +10,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
   Phone,
   Mail,
   MapPin,
@@ -18,10 +25,33 @@ import {
   MessageCircle,
   Car,
   Users,
+  CheckCircle,
 } from "lucide-react";
 
 export default function Contact() {
   const { t } = useTranslation();
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+
+  // Scroll to contact form when coming from navbar
+  useEffect(() => {
+    const handleScrollToContact = () => {
+      const contactForm = document.getElementById("contact-form");
+      if (contactForm) {
+        contactForm.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    };
+
+    // Check if we should scroll (e.g., from URL parameter or session storage)
+    const shouldScroll = sessionStorage.getItem("scrollToContact");
+    if (shouldScroll) {
+      // Small delay to ensure page is loaded
+      setTimeout(handleScrollToContact, 100);
+      sessionStorage.removeItem("scrollToContact");
+    }
+  }, []);
 
   // Animation variants
   const fadeInUp = {
@@ -78,6 +108,10 @@ export default function Contact() {
     e.preventDefault();
     // Form submission logic would go here
     console.log("Form submitted:", formData);
+
+    // Show success modal
+    setShowSuccessModal(true);
+
     // Reset form
     setFormData({
       name: "",
@@ -260,6 +294,7 @@ export default function Contact() {
                     </motion.div>
 
                     <motion.form
+                      id="contact-form"
                       onSubmit={handleSubmit}
                       className="space-y-6"
                       initial={{ opacity: 0, y: 20 }}
@@ -436,6 +471,26 @@ export default function Contact() {
 
       <Footer />
       <WhatsAppButton />
+
+      {/* Success Modal */}
+      <Dialog open={showSuccessModal} onOpenChange={setShowSuccessModal}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2">
+              <CheckCircle className="w-6 h-6 text-green-500" />
+              {t("contact.success.title")}
+            </DialogTitle>
+            <DialogDescription>
+              {t("contact.success.message")}
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex justify-end">
+            <Button onClick={() => setShowSuccessModal(false)}>
+              {t("contact.success.close")}
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
