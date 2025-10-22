@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "+905325550123"; // WhatsApp numarası
+  const phoneNumber = "+905358249994"; // WhatsApp numarası
   const message =
     "Merhaba! Premium araçlarınız hakkında bilgi almak istiyorum.";
 

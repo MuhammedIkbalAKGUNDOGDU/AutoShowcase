@@ -34,40 +34,7 @@ const getBlogPosts = (t: any) => {
     "premium-arac-bakimi-2024": {
       id: "premium-arac-bakimi-2024",
       title: t("blog.posts.premium-arac-bakimi-2024.title"),
-      content: `
-      <p>Premium araçlar, sadece bir ulaşım aracı değil, aynı zamanda bir yaşam tarzının yansımasıdır. Bu değerli araçların performansını ve değerini korumak için düzenli bakım kritik önem taşır.</p>
-      
-      <h2>Neden Premium Araç Bakımı Önemli?</h2>
-      <p>Premium araçlar, gelişmiş teknoloji ve yüksek kaliteli malzemeler kullanılarak üretilir. Bu araçların bakımı da standart araçlardan farklıdır ve özel dikkat gerektirir.</p>
-      
-      <h3>Düzenli Bakımın Faydaları:</h3>
-      <ul>
-        <li><strong>Performans Korunması:</strong> Motor ve diğer kritik bileşenlerin optimal performansta çalışması</li>
-        <li><strong>Güvenlik:</strong> Tüm güvenlik sistemlerinin düzgün çalışması</li>
-        <li><strong>Değer Korunması:</strong> Aracın piyasa değerinin korunması</li>
-        <li><strong>Uzun Ömür:</strong> Aracın ömrünün uzatılması</li>
-      </ul>
-      
-      <h2>2024'te Dikkat Edilmesi Gerekenler</h2>
-      <p>Bu yıl, otomotiv teknolojisindeki gelişmeler nedeniyle premium araç bakımında bazı yeni trendler ortaya çıkmıştır:</p>
-      
-      <h3>Elektronik Sistem Bakımı</h3>
-      <p>Modern premium araçlar, gelişmiş elektronik sistemlerle donatılmıştır. Bu sistemlerin düzenli kontrolü ve güncellemesi önemlidir.</p>
-      
-      <h3>Hibrit ve Elektrikli Sistemler</h3>
-      <p>Premium markaların hibrit ve elektrikli modelleri için özel bakım protokolleri geliştirilmiştir. Bu araçların bakımı için sertifikalı teknisyenler gereklidir.</p>
-      
-      <h2>Bakım Programı Önerileri</h2>
-      <p>Premium araçlarınız için önerilen bakım programı:</p>
-      <ul>
-        <li>Her 10.000 km'de genel kontrol</li>
-        <li>Her 20.000 km'de detaylı bakım</li>
-        <li>Yılda bir kez kapsamlı servis</li>
-        <li>Elektronik sistem güncellemeleri</li>
-      </ul>
-      
-      <p>Premium araç bakımı, sadece araç sahipleri için değil, aynı zamanda gelecek nesiller için de önemlidir. Düzgün bakılan araçlar, çevreye daha az zarar verir ve sürdürülebilir bir gelecek için katkıda bulunur.</p>
-    `,
+      content: t("blog.posts.premium-arac-bakimi-2024.content"),
       image: blogImage1,
       author: "Ahmet Yılmaz",
       date: "2024-01-15",

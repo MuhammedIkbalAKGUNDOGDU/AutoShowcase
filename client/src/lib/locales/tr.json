@@ -57,7 +57,8 @@
         "title": "Premium Araç Bakımının 2024'teki Önemi",
         "excerpt": "Premium araçlarınızın performansını ve değerini korumak için düzenli bakımın kritik önemi hakkında detaylı bilgiler.",
         "category": "Bakım",
-        "tags": ["Bakım", "Premium", "Performans"]
+        "tags": ["Bakım", "Premium", "Performans"],
+        "content": "<p>Premium araçlar, sadece bir ulaşım aracı değil, aynı zamanda bir yaşam tarzının yansımasıdır. Bu değerli araçların performansını ve değerini korumak için düzenli bakım kritik önem taşır.</p><h2>Neden Premium Araç Bakımı Önemli?</h2><p>Premium araçlar, gelişmiş teknoloji ve yüksek kaliteli malzemeler kullanılarak üretilir. Bu araçların bakımı da standart araçlardan farklıdır ve özel dikkat gerektirir.</p><h3>Düzenli Bakımın Faydaları:</h3><ul><li><strong>Performans Korunması:</strong> Motor ve diğer kritik bileşenlerin optimal performansta çalışması</li><li><strong>Güvenlik:</strong> Tüm güvenlik sistemlerinin düzgün çalışması</li><li><strong>Değer Korunması:</strong> Aracın piyasa değerinin korunması</li><li><strong>Uzun Ömür:</strong> Aracın ömrünün uzatılması</li></ul><h2>2024'te Dikkat Edilmesi Gerekenler</h2><p>Bu yıl, otomotiv teknolojisindeki gelişmeler nedeniyle premium araç bakımında bazı yeni trendler ortaya çıkmıştır:</p><h3>Elektronik Sistem Bakımı</h3><p>Modern premium araçlar, gelişmiş elektronik sistemlerle donatılmıştır. Bu sistemlerin düzenli kontrolü ve güncellemesi önemlidir.</p><h3>Hibrit ve Elektrikli Sistemler</h3><p>Premium markaların hibrit ve elektrikli modelleri için özel bakım protokolleri geliştirilmiştir. Bu araçların bakımı için sertifikalı teknisyenler gereklidir.</p><h2>Bakım Programı Önerileri</h2><p>Premium araçlarınız için önerilen bakım programı:</p><ul><li>Her 10.000 km'de genel kontrol</li><li>Her 20.000 km'de detaylı bakım</li><li>Yılda bir kez kapsamlı servis</li><li>Elektronik sistem güncellemeleri</li></ul><p>Premium araç bakımı, sadece araç sahipleri için değil, aynı zamanda gelecek nesiller için de önemlidir. Düzgün bakılan araçlar, çevreye daha az zarar verir ve sürdürülebilir bir gelecek için katkıda bulunur.</p>"
       },
       "elektrikli-araclarin-gelecegi": {
         "title": "Elektrikli Araçların Geleceği: 2024 Trendleri",
@@ -90,6 +91,44 @@
         "tags": ["Sigorta", "Güvenlik", "Rehber"]
       }
     }
+  },
+  "carDetail": {
+    "notFound": "Araç bulunamadı",
+    "backToVehicles": "Araç Listesine Dön",
+    "contactUs": "Bize Ulaşın",
+    "testDrive": "Test Sürüşü",
+    "features": "Özellikler",
+    "specifications": "Teknik Özellikler",
+    "colors": "Renk Seçenekleri",
+    "gallery": "Galeri",
+    "engine": "Motor",
+    "power": "Güç",
+    "torque": "Tork",
+    "acceleration": "Hızlanma",
+    "topSpeed": "Maksimum Hız",
+    "fuelConsumption": "Yakıt Tüketimi",
+    "transmission": "Şanzıman",
+    "driveType": "Çekiş",
+    "seats": "Koltuk",
+    "doors": "Kapı",
+    "descriptions": {
+      "mercedes-s-class": "Lüks ve konforun mükemmel birleşimi. Mercedes-Benz S-Class, üstün teknoloji ve zarafet sunar.",
+      "porsche-911-carrera": "Efsanevi 911'in en saf hali. Porsche 911 Carrera, spor otomobil deneyiminin zirvesini sunar.",
+      "bmw-m5-competition": "Performans ve lüksün mükemmel dengesi. BMW M5 Competition, güçlü motoru ve gelişmiş teknolojisi ile dikkat çeker.",
+      "audi-q8-premium": "Lüks SUV segmentinin öncüsü. Audi Q8 Premium, geniş iç mekanı ve gelişmiş teknolojisi ile öne çıkar.",
+      "tesla-model-s-plaid": "Elektrikli performansın zirvesi. Tesla Model S Plaid, sıfır emisyonla eşsiz hız ve teknoloji sunar.",
+      "range-rover-sport-hse": "Off-road yetenekleri ve lüks konforun birleşimi. Range Rover Sport HSE, her koşulda üstün performans sunar.",
+      "jaguar-f-type-r": "İngiliz zarafeti ve güçlü performansın buluşması. Jaguar F-Type R, spor otomobil tutkunları için tasarlandı.",
+      "maserati-quattroporte": "İtalyan lüksünün ve performansın simgesi. Maserati Quattroporte, zarafet ve gücü mükemmel şekilde harmanlar.",
+      "bentley-continental-gt": "Ultra lüks grand tourer. Bentley Continental GT, el yapımı detayları ve güçlü performansı ile eşsiz bir deneyim sunar.",
+      "lexus-ls-500": "Japon lüksünün zirvesi. Lexus LS 500, sessizlik ve konforu en üst seviyede sunar.",
+      "aston-martin-db11": "İngiliz spor otomobil geleneğinin modern yorumu. Aston Martin DB11, zarafet ve performansı birleştirir.",
+      "rolls-royce-ghost": "Ultra lüksün tanımı. Rolls-Royce Ghost, el yapımı detayları ve eşsiz konforu ile dünyanın en prestijli sedanlarından biridir."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Premium Auto. Tüm hakları saklıdır.",
+    "softiumTechnologies": "tarafından hazırlanmıştır"
   },
   "language": {
     "select": "Dil"

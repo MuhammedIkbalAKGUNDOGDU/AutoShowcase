@@ -17,7 +17,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Mock car data - in real app this would come from API
-const getCarDetails = (carId: string) => {
+const getCarDetails = (carId: string, t: any) => {
   const cars = {
     "mercedes-s-class": {
       id: "mercedes-s-class",
@@ -26,8 +26,7 @@ const getCarDetails = (carId: string) => {
       model: "S-Class",
       year: 2024,
       price: "₺3.750.000",
-      description:
-        "Lüks ve konforun mükemmel birleşimi. Mercedes-Benz S-Class, üstün teknoloji ve zarafet sunar.",
+      description: t("carDetail.descriptions.mercedes-s-class"),
       features: [
         "4MATIC All-Wheel Drive",
         "Burmester 4D Surround Sound",
@@ -58,8 +57,7 @@ const getCarDetails = (carId: string) => {
       model: "911 Carrera",
       year: 2024,
       price: "₺4.160.000",
-      description:
-        "Efsanevi 911'in en saf hali. Porsche 911 Carrera, spor otomobil deneyiminin zirvesini sunar.",
+      description: t("carDetail.descriptions.porsche-911-carrera"),
       features: [
         "Porsche Doppelkupplung (PDK)",
         "Porsche Active Suspension Management",
@@ -90,8 +88,7 @@ const getCarDetails = (carId: string) => {
       model: "M5 Competition",
       year: 2024,
       price: "₺3.500.000",
-      description:
-        "Performans ve lüksün mükemmel dengesi. BMW M5 Competition, güçlü motoru ve gelişmiş teknolojisi ile dikkat çeker.",
+      description: t("carDetail.descriptions.bmw-m5-competition"),
       features: [
         "xDrive All-Wheel Drive",
         "M TwinPower Turbo V8",
@@ -127,8 +124,7 @@ const getCarDetails = (carId: string) => {
       model: "Q8 Premium",
       year: 2024,
       price: "₺2.680.000",
-      description:
-        "Lüks SUV segmentinin öncüsü. Audi Q8 Premium, geniş iç mekanı ve gelişmiş teknolojisi ile öne çıkar.",
+      description: t("carDetail.descriptions.audi-q8-premium"),
       features: [
         "quattro All-Wheel Drive",
         "Virtual Cockpit Plus",
@@ -164,8 +160,7 @@ const getCarDetails = (carId: string) => {
       model: "Model S Plaid",
       year: 2024,
       price: "₺3.300.000",
-      description:
-        "Elektrikli performansın zirvesi. Tesla Model S Plaid, sıfır emisyonla eşsiz hız ve teknoloji sunar.",
+      description: t("carDetail.descriptions.tesla-model-s-plaid"),
       features: [
         "Tri-Motor All-Wheel Drive",
         "17-inch Touchscreen Display",
@@ -444,7 +439,7 @@ export default function CarDetail() {
   const { id } = useParams();
 
   // Get car ID from URL params
-  const car = getCarDetails(id || "");
+  const car = getCarDetails(id || "", t);
 
   if (!car) {
     return (
@@ -452,9 +447,11 @@ export default function CarDetail() {
         <Navbar />
         <main className="flex-1 py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-2xl font-bold mb-4">Araç bulunamadı</h1>
+            <h1 className="text-2xl font-bold mb-4">
+              {t("carDetail.notFound")}
+            </h1>
             <Link href="/vehicles">
-              <Button>Araç Listesine Dön</Button>
+              <Button>{t("carDetail.backToVehicles")}</Button>
             </Link>
           </div>
         </main>
@@ -474,7 +471,7 @@ export default function CarDetail() {
             <Link href="/vehicles">
               <Button variant="outline" className="flex items-center gap-2">
                 <ArrowLeft className="w-4 h-4" />
-                Araç Listesine Dön
+                {t("carDetail.backToVehicles")}
               </Button>
             </Link>
           </div>
@@ -492,7 +489,9 @@ export default function CarDetail() {
 
               {/* Color Options */}
               <div className="space-y-3">
-                <h3 className="text-lg font-semibold">Renk Seçenekleri</h3>
+                <h3 className="text-lg font-semibold">
+                  {t("carDetail.colors")}
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {car.colors.map((color, index) => (
                     <Badge key={index} variant="outline" className="px-3 py-1">
@@ -524,7 +523,7 @@ export default function CarDetail() {
               {/* Key Features */}
               <div>
                 <h3 className="text-xl font-semibold mb-4">
-                  Öne Çıkan Özellikler
+                  {t("carDetail.features")}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {car.features.map((feature, index) => (
@@ -540,13 +539,15 @@ export default function CarDetail() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-4">
-                    Teknik Özellikler
+                    {t("carDetail.specifications")}
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="flex items-center gap-3">
                       <Settings className="w-5 h-5 text-muted-foreground" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Motor</p>
+                        <p className="text-sm text-muted-foreground">
+                          {t("carDetail.engine")}
+                        </p>
                         <p className="font-medium">
                           {car.specifications.engine}
                         </p>
@@ -556,7 +557,9 @@ export default function CarDetail() {
                     <div className="flex items-center gap-3">
                       <Gauge className="w-5 h-5 text-muted-foreground" />
                       <div>
-                        <p className="text-sm text-muted-foreground">Güç</p>
+                        <p className="text-sm text-muted-foreground">
+                          {t("carDetail.power")}
+                        </p>
                         <p className="font-medium">
                           {car.specifications.power}
                         </p>
@@ -567,7 +570,7 @@ export default function CarDetail() {
                       <Fuel className="w-5 h-5 text-muted-foreground" />
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          Yakıt Tüketimi
+                          {t("carDetail.fuelConsumption")}
                         </p>
                         <p className="font-medium">
                           {car.specifications.fuelConsumption}
@@ -579,7 +582,7 @@ export default function CarDetail() {
                       <Users className="w-5 h-5 text-muted-foreground" />
                       <div>
                         <p className="text-sm text-muted-foreground">
-                          Koltuk Sayısı
+                          {t("carDetail.seats")}
                         </p>
                         <p className="font-medium">
                           {car.specifications.seats}
@@ -593,10 +596,10 @@ export default function CarDetail() {
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="flex-1">
-                  İletişime Geç
+                  {t("carDetail.contactUs")}
                 </Button>
                 <Button variant="outline" size="lg" className="flex-1">
-                  Test Sürüşü Talep Et
+                  {t("carDetail.testDrive")}
                 </Button>
               </div>
             </div>

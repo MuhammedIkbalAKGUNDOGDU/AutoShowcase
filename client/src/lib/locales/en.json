@@ -57,7 +57,8 @@
         "title": "The Importance of Premium Car Maintenance in 2024",
         "excerpt": "Detailed information about the critical importance of regular maintenance to preserve the performance and value of your premium vehicles.",
         "category": "Maintenance",
-        "tags": ["Maintenance", "Premium", "Performance"]
+        "tags": ["Maintenance", "Premium", "Performance"],
+        "content": "<p>Premium vehicles are not just a means of transportation, but also a reflection of a lifestyle. Regular maintenance is critical to preserve the performance and value of these valuable vehicles.</p><h2>Why is Premium Car Maintenance Important?</h2><p>Premium vehicles are manufactured using advanced technology and high-quality materials. The maintenance of these vehicles is also different from standard vehicles and requires special attention.</p><h3>Benefits of Regular Maintenance:</h3><ul><li><strong>Performance Preservation:</strong> Optimal performance of engine and other critical components</li><li><strong>Safety:</strong> Proper functioning of all safety systems</li><li><strong>Value Preservation:</strong> Maintaining the vehicle's market value</li><li><strong>Longevity:</strong> Extending the vehicle's lifespan</li></ul><h2>Things to Consider in 2024</h2><p>This year, some new trends have emerged in premium car maintenance due to developments in automotive technology:</p><h3>Electronic System Maintenance</h3><p>Modern premium vehicles are equipped with advanced electronic systems. Regular inspection and updating of these systems is important.</p><h3>Hybrid and Electric Systems</h3><p>Special maintenance protocols have been developed for hybrid and electric models of premium brands. Certified technicians are required for the maintenance of these vehicles.</p><h2>Maintenance Program Recommendations</h2><p>Recommended maintenance program for your premium vehicles:</p><ul><li>General inspection every 10,000 km</li><li>Detailed maintenance every 20,000 km</li><li>Comprehensive service once a year</li><li>Electronic system updates</li></ul><p>Premium car maintenance is important not only for vehicle owners, but also for future generations. Well-maintained vehicles cause less harm to the environment and contribute to a sustainable future.</p>"
       },
       "elektrikli-araclarin-gelecegi": {
         "title": "The Future of Electric Vehicles: 2024 Trends",
@@ -90,6 +91,44 @@
         "tags": ["Insurance", "Security", "Guide"]
       }
     }
+  },
+  "carDetail": {
+    "notFound": "Vehicle not found",
+    "backToVehicles": "Back to Vehicles",
+    "contactUs": "Contact Us",
+    "testDrive": "Test Drive",
+    "features": "Features",
+    "specifications": "Specifications",
+    "colors": "Color Options",
+    "gallery": "Gallery",
+    "engine": "Engine",
+    "power": "Power",
+    "torque": "Torque",
+    "acceleration": "Acceleration",
+    "topSpeed": "Top Speed",
+    "fuelConsumption": "Fuel Consumption",
+    "transmission": "Transmission",
+    "driveType": "Drive Type",
+    "seats": "Seats",
+    "doors": "Doors",
+    "descriptions": {
+      "mercedes-s-class": "The perfect combination of luxury and comfort. Mercedes-Benz S-Class offers superior technology and elegance.",
+      "porsche-911-carrera": "The purest form of the legendary 911. Porsche 911 Carrera delivers the pinnacle of sports car experience.",
+      "bmw-m5-competition": "The perfect balance of performance and luxury. BMW M5 Competition stands out with its powerful engine and advanced technology.",
+      "audi-q8-premium": "The pioneer of the luxury SUV segment. Audi Q8 Premium stands out with its spacious interior and advanced technology.",
+      "tesla-model-s-plaid": "The pinnacle of electric performance. Tesla Model S Plaid offers unique speed and technology with zero emissions.",
+      "range-rover-sport-hse": "The combination of off-road capabilities and luxury comfort. Range Rover Sport HSE delivers superior performance in all conditions.",
+      "jaguar-f-type-r": "The meeting of British elegance and powerful performance. Jaguar F-Type R is designed for sports car enthusiasts.",
+      "maserati-quattroporte": "The symbol of Italian luxury and performance. Maserati Quattroporte perfectly blends elegance and power.",
+      "bentley-continental-gt": "Ultra-luxury grand tourer. Bentley Continental GT offers a unique experience with handcrafted details and powerful performance.",
+      "lexus-ls-500": "The pinnacle of Japanese luxury. Lexus LS 500 offers silence and comfort at the highest level.",
+      "aston-martin-db11": "The modern interpretation of British sports car tradition. Aston Martin DB11 combines elegance and performance.",
+      "rolls-royce-ghost": "The definition of ultra-luxury. Rolls-Royce Ghost is one of the world's most prestigious sedans with handcrafted details and unique comfort."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Premium Auto. All rights reserved.",
+    "softiumTechnologies": "Prepared by"
   },
   "language": {
     "select": "Language"

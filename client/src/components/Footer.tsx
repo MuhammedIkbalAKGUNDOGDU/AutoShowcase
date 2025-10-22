@@ -14,6 +14,7 @@ export default function Footer() {
             {t("footer.copyright")}
           </p>
           <p className="text-sm text-muted-foreground">
+            {t("footer.softiumTechnologies")}{" "}
             <a
               href="https://softiumtechnologies.com"
               target="_blank"
@@ -22,8 +23,7 @@ export default function Footer() {
               data-testid="link-softium"
             >
               Softium Technologies
-            </a>{" "}
-            tarafından hazırlanmıştır
+            </a>
           </p>
         </div>
       </div>
