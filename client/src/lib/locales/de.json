@@ -29,6 +29,14 @@
     "maintenance": {
       "title": "Umfassende Wartung",
       "description": "Professionelle Wartung für alle Fahrzeuge"
+    },
+    "inspection": {
+      "title": "Vollständige Inspektion",
+      "description": "Jedes Fahrzeug durchläuft eine umfassende 150-Punkte-Inspektion, um Premium-Qualität und Sicherheit zu gewährleisten."
+    },
+    "warranty": {
+      "title": "Premium-Garantie",
+      "description": "Erweiterte Garantieabdeckung für Seelenfrieden und Schutz Ihrer Luxusinvestition."
     }
   },
   "inventory": {
@@ -52,25 +60,6 @@
     "trustText": "Langfristige Beziehungen zu unseren Kunden aufbauen",
     "innovation": "Innovation",
     "innovationText": "Neueste Technologien nutzen, um das Kundenerlebnis zu verbessern"
-  },
-  "contact": {
-    "title": "Kontaktieren Sie uns",
-    "subtitle": "Wir sind hier, um Ihnen zu helfen, das perfekte Auto zu finden",
-    "address": "Adresse",
-    "addressText": "Luxusstraße, Geschäftsviertel, Istanbul",
-    "phone": "Telefon",
-    "phoneText": "+90 532 555 01 23",
-    "email": "E-Mail",
-    "emailText": "info@premiumauto.com",
-    "hours": "Öffnungszeiten",
-    "hoursText": "Montag - Freitag: 9:00 - 18:00",
-    "form": {
-      "name": "Name",
-      "email": "E-Mail",
-      "phone": "Telefon",
-      "message": "Nachricht",
-      "submit": "Nachricht senden"
-    }
   },
   "blog": {
     "title": "Blog",
