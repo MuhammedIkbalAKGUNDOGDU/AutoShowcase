@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "vehicles": "Fahrzeuge",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "contactUs": "Kontaktieren Sie uns"
+  },
+  "hero": {
+    "title": "Ihr Traumauto wartet auf Sie",
+    "subtitle": "Wo Luxus auf Leistung trifft",
+    "cta": "Entdecken Sie unsere Fahrzeuge"
+  },
+  "featured": {
+    "title": "Ausgewählte Fahrzeuge",
+    "viewDetails": "Details anzeigen"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "inspection": {
+      "title": "Vollständige Inspektion",
+      "description": "Jedes Fahrzeug durchläuft eine umfassende 150-Punkte-Inspektion für Premium-Qualität und Sicherheit."
+    },
+    "financing": {
+      "title": "Finanzierungsoptionen",
+      "description": "Flexible Finanzierungslösungen auf Ihre Bedürfnisse zugeschnitten mit wettbewerbsfähigen Konditionen."
+    },
+    "warranty": {
+      "title": "Premium-Garantie",
+      "description": "Erweiterte Garantieabdeckung für Sicherheit und Schutz Ihrer Luxusinvestition."
+    }
+  },
+  "inventory": {
+    "title": "Unser vollständiges Inventar",
+    "searchPlaceholder": "Nach Marke oder Modell suchen...",
+    "filterMake": "Nach Marke filtern",
+    "filterYear": "Nach Jahr filtern",
+    "allMakes": "Alle Marken",
+    "allYears": "Alle Jahre"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Premium Auto. Alle Rechte vorbehalten."
+  },
+  "language": {
+    "select": "Sprache"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "vehicles": "Vehicles",
+    "about": "About",
+    "contact": "Contact",
+    "contactUs": "Contact Us"
+  },
+  "hero": {
+    "title": "Your Dream Car Awaits",
+    "subtitle": "Where Luxury Meets Performance",
+    "cta": "Discover Our Vehicles"
+  },
+  "featured": {
+    "title": "Featured Vehicles",
+    "viewDetails": "View Details"
+  },
+  "services": {
+    "title": "Our Services",
+    "inspection": {
+      "title": "Full Inspection",
+      "description": "Every vehicle undergoes a comprehensive 150-point inspection to ensure premium quality and safety."
+    },
+    "financing": {
+      "title": "Financing Options",
+      "description": "Flexible financing solutions tailored to your needs with competitive rates and quick approval."
+    },
+    "warranty": {
+      "title": "Premium Warranty",
+      "description": "Extended warranty coverage for peace of mind and protection on your luxury investment."
+    }
+  },
+  "inventory": {
+    "title": "Our Full Inventory",
+    "searchPlaceholder": "Search by make or model...",
+    "filterMake": "Filter by Make",
+    "filterYear": "Filter by Year",
+    "allMakes": "All Makes",
+    "allYears": "All Years"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Premium Auto. All rights reserved."
+  },
+  "language": {
+    "select": "Language"
+  }
+}

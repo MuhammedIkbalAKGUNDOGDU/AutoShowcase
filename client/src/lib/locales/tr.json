@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "vehicles": "Araçlar",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "contactUs": "Bize Ulaşın"
+  },
+  "hero": {
+    "title": "Hayalinizdeki Araba Sizi Bekliyor",
+    "subtitle": "Lüks ve Performansın Buluştuğu Yer",
+    "cta": "Araçlarımızı Keşfedin"
+  },
+  "featured": {
+    "title": "Öne Çıkan Araçlar",
+    "viewDetails": "Detayları Gör"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "inspection": {
+      "title": "Tam Kontrol",
+      "description": "Her araç, premium kalite ve güvenliği sağlamak için kapsamlı 150 nokta kontrolünden geçer."
+    },
+    "financing": {
+      "title": "Finansman Seçenekleri",
+      "description": "Rekabetçi oranlar ve hızlı onay ile ihtiyaçlarınıza özel esnek finansman çözümleri."
+    },
+    "warranty": {
+      "title": "Premium Garanti",
+      "description": "Lüks yatırımınızın korunması ve gönül rahatlığı için genişletilmiş garanti kapsamı."
+    }
+  },
+  "inventory": {
+    "title": "Tüm Envanter",
+    "searchPlaceholder": "Marka veya model ara...",
+    "filterMake": "Markaya Göre Filtrele",
+    "filterYear": "Yıla Göre Filtrele",
+    "allMakes": "Tüm Markalar",
+    "allYears": "Tüm Yıllar"
+  },
+  "footer": {
+    "copyright": "Telif Hakkı © 2025 Premium Auto. Tüm hakları saklıdır."
+  },
+  "language": {
+    "select": "Dil"
+  }
+}
