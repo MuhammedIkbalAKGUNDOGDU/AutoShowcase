@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -19,6 +20,7 @@ const rangeRoverImage = "/Green_Range_Rover_luxury_SUV_85b8eefb.png";
 //todo: remove mock functionality
 const featuredCars = [
   {
+    id: "mercedes-s-class",
     image: mercedesImage,
     make: "Mercedes-Benz",
     model: "S-Class",
@@ -26,6 +28,7 @@ const featuredCars = [
     price: "₺3.750.000",
   },
   {
+    id: "porsche-911-carrera",
     image: porscheImage,
     make: "Porsche",
     model: "911 Carrera",
@@ -33,6 +36,7 @@ const featuredCars = [
     price: "₺4.160.000",
   },
   {
+    id: "bmw-m5-competition",
     image: bmwImage,
     make: "BMW",
     model: "M5 Competition",
@@ -40,6 +44,7 @@ const featuredCars = [
     price: "₺3.500.000",
   },
   {
+    id: "audi-q8-premium",
     image: audiImage,
     make: "Audi",
     model: "Q8 Premium",
@@ -47,6 +52,7 @@ const featuredCars = [
     price: "₺2.680.000",
   },
   {
+    id: "tesla-model-s-plaid",
     image: teslaImage,
     make: "Tesla",
     model: "Model S Plaid",
@@ -54,6 +60,7 @@ const featuredCars = [
     price: "₺3.300.000",
   },
   {
+    id: "range-rover-sport-hse",
     image: rangeRoverImage,
     make: "Range Rover",
     model: "Sport HSE",
@@ -64,6 +71,14 @@ const featuredCars = [
 
 export default function FeaturedVehicles() {
   const { t } = useTranslation();
+
+  // Animation variants
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: "easeOut" },
+  };
+
   const [api, setApi] = useState<any>(null);
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
@@ -93,12 +108,16 @@ export default function FeaturedVehicles() {
   return (
     <section className="py-16 md:py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2
+        <motion.h2
           className="text-3xl md:text-4xl font-bold text-center mb-12"
           data-testid="text-featured-title"
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeInUp}
         >
           {t("featured.title")}
-        </h2>
+        </motion.h2>
 
         <div className="relative">
           <Carousel

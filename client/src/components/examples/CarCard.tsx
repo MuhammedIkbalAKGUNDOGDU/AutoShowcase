@@ -5,6 +5,7 @@ export default function CarCardExample() {
   return (
     <div className="max-w-sm">
       <CarCard
+        id="mercedes-s-class"
         image={mercedesImage}
         make="Mercedes-Benz"
         model="S-Class"

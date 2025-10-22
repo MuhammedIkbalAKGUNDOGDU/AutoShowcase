@@ -2,6 +2,7 @@
   "nav": {
     "home": "Ana Sayfa",
     "vehicles": "Araçlar",
+    "blog": "Blog",
     "about": "Hakkımızda",
     "contact": "İletişim",
     "contactUs": "Bize Ulaşın"
@@ -40,6 +41,55 @@
   },
   "footer": {
     "copyright": "Telif Hakkı © 2025 Premium Auto. Tüm hakları saklıdır."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Premium otomobil dünyasından en güncel haberler, rehberler ve uzman görüşleri.",
+    "readMore": "Devamını Oku",
+    "backToBlog": "Blog'a Dön",
+    "share": "Paylaş",
+    "like": "Beğen",
+    "tags": "Etiketler",
+    "notFound": "Blog Yazısı Bulunamadı",
+    "notFoundMessage": "Aradığınız blog yazısı mevcut değil.",
+    "posts": {
+      "premium-arac-bakimi-2024": {
+        "title": "Premium Araç Bakımının 2024'teki Önemi",
+        "excerpt": "Premium araçlarınızın performansını ve değerini korumak için düzenli bakımın kritik önemi hakkında detaylı bilgiler.",
+        "category": "Bakım",
+        "tags": ["Bakım", "Premium", "Performans"]
+      },
+      "elektrikli-araclarin-gelecegi": {
+        "title": "Elektrikli Araçların Geleceği: 2024 Trendleri",
+        "excerpt": "Elektrikli araç teknolojisindeki son gelişmeler ve premium elektrikli araçların gelecekteki yeri.",
+        "category": "Teknoloji",
+        "tags": ["Elektrikli", "Teknoloji", "Gelecek"]
+      },
+      "luxury-suv-secimi": {
+        "title": "Lüks SUV Seçiminde Dikkat Edilmesi Gerekenler",
+        "excerpt": "Premium SUV modelleri arasında seçim yaparken göz önünde bulundurmanız gereken faktörler ve öneriler.",
+        "category": "Rehber",
+        "tags": ["SUV", "Lüks", "Rehber"]
+      },
+      "spor-araba-karsilastirma": {
+        "title": "2024'ün En İyi Spor Arabaları Karşılaştırması",
+        "excerpt": "Bu yılın en performanslı spor arabalarını detaylı karşılaştırma ve özellik analizi.",
+        "category": "Karşılaştırma",
+        "tags": ["Spor Araba", "Karşılaştırma", "Performans"]
+      },
+      "arac-finansman-secenekleri": {
+        "title": "Premium Araç Finansman Seçenekleri",
+        "excerpt": "Lüks araç satın alırken mevcut finansman seçenekleri ve avantajları hakkında kapsamlı rehber.",
+        "category": "Finansman",
+        "tags": ["Finansman", "Lüks", "Rehber"]
+      },
+      "arac-sigortasi-rehberi": {
+        "title": "Premium Araç Sigortası: Kapsamlı Rehber",
+        "excerpt": "Değerli araçlarınız için en uygun sigorta seçenekleri ve dikkat edilmesi gereken noktalar.",
+        "category": "Sigorta",
+        "tags": ["Sigorta", "Güvenlik", "Rehber"]
+      }
+    }
   },
   "language": {
     "select": "Dil"

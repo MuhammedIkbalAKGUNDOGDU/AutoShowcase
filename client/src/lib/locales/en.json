@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "vehicles": "Vehicles",
+    "blog": "Blog",
     "about": "About",
     "contact": "Contact",
     "contactUs": "Contact Us"
@@ -40,6 +41,55 @@
   },
   "footer": {
     "copyright": "Copyright © 2025 Premium Auto. All rights reserved."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest news, guides and expert opinions from the premium automotive world.",
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog",
+    "share": "Share",
+    "like": "Like",
+    "tags": "Tags",
+    "notFound": "Blog Post Not Found",
+    "notFoundMessage": "The blog post you are looking for does not exist.",
+    "posts": {
+      "premium-arac-bakimi-2024": {
+        "title": "The Importance of Premium Car Maintenance in 2024",
+        "excerpt": "Detailed information about the critical importance of regular maintenance to preserve the performance and value of your premium vehicles.",
+        "category": "Maintenance",
+        "tags": ["Maintenance", "Premium", "Performance"]
+      },
+      "elektrikli-araclarin-gelecegi": {
+        "title": "The Future of Electric Vehicles: 2024 Trends",
+        "excerpt": "Latest developments in electric vehicle technology and the future place of premium electric vehicles.",
+        "category": "Technology",
+        "tags": ["Electric", "Technology", "Future"]
+      },
+      "luxury-suv-secimi": {
+        "title": "What to Consider When Choosing a Luxury SUV",
+        "excerpt": "Factors and recommendations to consider when choosing among premium SUV models.",
+        "category": "Guide",
+        "tags": ["SUV", "Luxury", "Guide"]
+      },
+      "spor-araba-karsilastirma": {
+        "title": "Comparison of the Best Sports Cars of 2024",
+        "excerpt": "Detailed comparison and feature analysis of this year's most performance sports cars.",
+        "category": "Comparison",
+        "tags": ["Sports Car", "Comparison", "Performance"]
+      },
+      "arac-finansman-secenekleri": {
+        "title": "Premium Vehicle Financing Options",
+        "excerpt": "Comprehensive guide on available financing options and advantages when purchasing luxury vehicles.",
+        "category": "Financing",
+        "tags": ["Financing", "Luxury", "Guide"]
+      },
+      "arac-sigortasi-rehberi": {
+        "title": "Premium Vehicle Insurance: Comprehensive Guide",
+        "excerpt": "Most suitable insurance options for your valuable vehicles and points to consider.",
+        "category": "Insurance",
+        "tags": ["Insurance", "Security", "Guide"]
+      }
+    }
   },
   "language": {
     "select": "Language"

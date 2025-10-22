@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import CarCard from "@/components/CarCard";
 import { Input } from "@/components/ui/input";
 import {
@@ -29,6 +31,7 @@ const rollsRoyceImage = "/Black_Rolls-Royce_luxury_sedan_89eec9b5.png";
 //todo: remove mock functionality
 const allCars = [
   {
+    id: "mercedes-s-class",
     image: mercedesImage,
     make: "Mercedes-Benz",
     model: "S-Class",
@@ -36,6 +39,7 @@ const allCars = [
     price: "₺3.750.000",
   },
   {
+    id: "porsche-911-carrera",
     image: porscheImage,
     make: "Porsche",
     model: "911 Carrera",
@@ -43,6 +47,7 @@ const allCars = [
     price: "₺4.160.000",
   },
   {
+    id: "bmw-m5-competition",
     image: bmwImage,
     make: "BMW",
     model: "M5 Competition",
@@ -50,6 +55,7 @@ const allCars = [
     price: "₺3.500.000",
   },
   {
+    id: "audi-q8-premium",
     image: audiImage,
     make: "Audi",
     model: "Q8 Premium",
@@ -57,6 +63,7 @@ const allCars = [
     price: "₺2.680.000",
   },
   {
+    id: "tesla-model-s-plaid",
     image: teslaImage,
     make: "Tesla",
     model: "Model S Plaid",
@@ -64,6 +71,7 @@ const allCars = [
     price: "₺3.300.000",
   },
   {
+    id: "range-rover-sport-hse",
     image: rangeRoverImage,
     make: "Range Rover",
     model: "Sport HSE",
@@ -71,6 +79,7 @@ const allCars = [
     price: "₺2.960.000",
   },
   {
+    id: "jaguar-f-type-r",
     image: jaguarImage,
     make: "Jaguar",
     model: "F-Type R",
@@ -78,6 +87,7 @@ const allCars = [
     price: "₺3.100.000",
   },
   {
+    id: "maserati-quattroporte",
     image: maseratiImage,
     make: "Maserati",
     model: "Quattroporte",
@@ -85,6 +95,7 @@ const allCars = [
     price: "₺3.380.000",
   },
   {
+    id: "bentley-continental-gt",
     image: bentleyImage,
     make: "Bentley",
     model: "Continental GT",
@@ -92,6 +103,7 @@ const allCars = [
     price: "₺7.350.000",
   },
   {
+    id: "lexus-ls-500",
     image: lexusImage,
     make: "Lexus",
     model: "LS 500",
@@ -99,6 +111,7 @@ const allCars = [
     price: "₺2.700.000",
   },
   {
+    id: "aston-martin-db11",
     image: astonMartinImage,
     make: "Aston Martin",
     model: "DB11",
@@ -106,6 +119,7 @@ const allCars = [
     price: "₺6.450.000",
   },
   {
+    id: "rolls-royce-ghost",
     image: rollsRoyceImage,
     make: "Rolls-Royce",
     model: "Ghost",
@@ -116,6 +130,28 @@ const allCars = [
 
 export default function Vehicles() {
   const { t } = useTranslation();
+
+  // Animation variants
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: "easeOut" },
+  };
+
+  const staggerContainer = {
+    animate: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const scaleIn = {
+    initial: { opacity: 0, scale: 0.8 },
+    animate: { opacity: 1, scale: 1 },
+    transition: { duration: 0.5, ease: "easeOut" },
+  };
+
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedMake, setSelectedMake] = useState("all");
   const [selectedYear, setSelectedYear] = useState("all");
@@ -144,15 +180,25 @@ export default function Vehicles() {
       <Navbar />
       <main className="flex-1 py-16 md:py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1
+          <motion.h1
             className="text-3xl md:text-4xl font-bold text-center mb-12"
             data-testid="text-inventory-title"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUp}
           >
             {t("inventory.title")}
-          </h1>
+          </motion.h1>
 
-          <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="relative">
+          <motion.div
+            className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-4"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerContainer}
+          >
+            <motion.div className="relative" variants={scaleIn}>
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <Input
                 type="text"
@@ -162,56 +208,75 @@ export default function Vehicles() {
                 className="pl-10"
                 data-testid="input-search"
               />
-            </div>
+            </motion.div>
 
-            <Select value={selectedMake} onValueChange={setSelectedMake}>
-              <SelectTrigger data-testid="select-filter-make">
-                <SelectValue placeholder={t("inventory.filterMake")} />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">{t("inventory.allMakes")}</SelectItem>
-                {uniqueMakes.map((make) => (
-                  <SelectItem key={make} value={make}>
-                    {make}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <motion.div variants={scaleIn}>
+              <Select value={selectedMake} onValueChange={setSelectedMake}>
+                <SelectTrigger data-testid="select-filter-make">
+                  <SelectValue placeholder={t("inventory.filterMake")} />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">{t("inventory.allMakes")}</SelectItem>
+                  {uniqueMakes.map((make) => (
+                    <SelectItem key={make} value={make}>
+                      {make}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </motion.div>
 
-            <Select value={selectedYear} onValueChange={setSelectedYear}>
-              <SelectTrigger data-testid="select-filter-year">
-                <SelectValue placeholder={t("inventory.filterYear")} />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">{t("inventory.allYears")}</SelectItem>
-                {uniqueYears.map((year) => (
-                  <SelectItem key={year} value={year.toString()}>
-                    {year}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
+            <motion.div variants={scaleIn}>
+              <Select value={selectedYear} onValueChange={setSelectedYear}>
+                <SelectTrigger data-testid="select-filter-year">
+                  <SelectValue placeholder={t("inventory.filterYear")} />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">{t("inventory.allYears")}</SelectItem>
+                  {uniqueYears.map((year) => (
+                    <SelectItem key={year} value={year.toString()}>
+                      {year}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </motion.div>
+          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={staggerContainer}
+          >
             {filteredCars.map((car, index) => (
-              <CarCard key={index} {...car} />
+              <motion.div key={index} variants={scaleIn}>
+                <CarCard {...car} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {filteredCars.length === 0 && (
-            <div className="text-center py-12">
+            <motion.div
+              className="text-center py-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+            >
               <p
                 className="text-muted-foreground text-lg"
                 data-testid="text-no-results"
               >
                 No vehicles found matching your criteria.
               </p>
-            </div>
+            </motion.div>
           )}
         </div>
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

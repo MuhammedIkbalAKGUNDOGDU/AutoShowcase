@@ -1,8 +1,9 @@
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import Hero from '@/components/Hero';
-import FeaturedVehicles from '@/components/FeaturedVehicles';
-import ServicesSection from '@/components/ServicesSection';
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import Hero from "@/components/Hero";
+import FeaturedVehicles from "@/components/FeaturedVehicles";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <ServicesSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
